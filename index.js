@@ -45,7 +45,20 @@ const questions = () => {
             }
         },
         {
-            
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?',
+            validate: titleInput => {
+                if (descriptionInput){
+                    return true;
+                }  else{
+                    console.log('Please enter the title of your project');
+                    return false; 
+                }
+            }
+        },
+        {
+            type
         }
 
     ])
