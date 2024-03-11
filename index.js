@@ -65,8 +65,16 @@ const questions = () => {
             default: ['MIT']
         },
         {
-            ty
-        }
+            type: 'input',
+            name: 'install',
+            message: 'if applicable, list the steps required to install your project'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide a short description on how to use the app',
+        },
+        
 
     ])
 }
