@@ -58,7 +58,14 @@ const questions = () => {
             }
         },
         {
-            type
+            type: 'list',
+            name: 'License',
+            messgae: 'Which License does your project have?',
+            choices: ['MIT', 'GNU AGPLv3','GNU GPLv3', 'GNU LGPLv3','Apache 2.0', 'Mozilla 2.0', 'Boost Software', 'Unlicense', 'None'],
+            default: ['MIT']
+        },
+        {
+            ty
         }
 
     ])
