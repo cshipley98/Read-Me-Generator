@@ -74,10 +74,18 @@ const questions = () => {
             name: 'usage',
             message: 'Provide a short description on how to use the app',
         },
-        
-
-    ])
-}
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What commands should be run to execute tests?',
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'Provide guidelines for users about contributing to the repo'
+        }
+    ]);
+};
 
 
 
