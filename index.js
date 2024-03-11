@@ -89,20 +89,38 @@ const questions = () => {
 };
 
     // TODO: Create a function to write README file
-    const init = () => {
+   const writeToFile = data => {
+    fs.writeFile('README.MD', data, err => {
+        if (err){
+            console.log(err);
+            return;
+        }   else{
+            console.log("Your README file has been generated!");
+        }
+    });
+   };
+
+
+
+    // TODO: Create a function to initialize app
+        const init = () => {
         questions()
         //get user answers
-        .then(answers => {
+            .then(answers => {
             return generateMarkdown(answers);
-    })
-        //use data ti display on page
-        .then(data => {
-        return generateMarkdown(answers);
-    })
-    //use data to display on page
+})
+        //use data to display on page
+            .then(data => {
+            return generateMarkdown(answers);
+})
+        //use data to display on page
+            .then(data => {
+            return writeToFile(data);
+})
+        //catch errors
+            .catch(err => {
+            console.log(err);
+})
 }
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+            // Function call to initialize app
+            init();
