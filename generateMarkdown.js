@@ -8,7 +8,13 @@ if (license === 'none'){
 } else if (license === 'MIT'){
   return licenseBadge + 'MITLicense-blue'
 } else if (license === 'GNU AGPLv3'){
-  return licenseBadge + 
+  return licenseBadge + 'GNUAGPLv3-brightorange';
+} else if (license === 'GNU GPLv3'){
+  return licenseBadge + 'GNUGPLv3-brightorange';
+} else if (license === 'GNU LGPLv3'){
+  return licenseBadge + 'GNULGPLv3-brightorange';
+} else if (license === 'Apache 2.0'){
+  return licenseBadge + 'ApacheLicense2.0-brightgreen';
 }
 
 // TODO: Create a function that returns the license link
