@@ -2,15 +2,14 @@
 const renderLicenseBadge = License => {
   let LicenseBadge = 'https://img.shields.io/badge/license-';
 }
-
-
-
-
-
-
-
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+if (license === 'none'){
+  return '';
+} else if (license === 'MIT'){
+  return licenseBadge + 'MITLicense-blue'
+} else if (license === 'GNU AGPLv3'){
+  return licenseBadge + 
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
