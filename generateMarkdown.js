@@ -36,7 +36,11 @@ if (license === 'None'){
   return licenseLink = licenseLink + 'agpl-3.0/';
 } else if (license === 'GNU LGPLv3'){
   return licenseLink = licenseLink + 'lgpl-3.0/';
-} 
+} else if (license === 'Apache 2.0'){
+  return licenseLink = licenseLink + 'apache-2.0/';
+} else if (license === 'Mozilla 2.0'){
+  return licenseLink = licenseLink + 'mpl-2.0/';
+}
 }
 
 // TODO: Create a function that returns the license section of README
