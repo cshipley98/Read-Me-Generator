@@ -40,7 +40,7 @@ if (license === 'None'){
   return licenseLink = licenseLink + 'apache-2.0/';
 } else if (license === 'Mozilla 2.0'){
   return licenseLink = licenseLink + 'mpl-2.0/';
-}
+} else if (license === 'Unlicense')
 }
 
 // TODO: Create a function that returns the license section of README
