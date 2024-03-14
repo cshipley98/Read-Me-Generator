@@ -22,26 +22,28 @@ if (license === 'none'){
   return licenseBadge +'BoostSoftwareLicense1.0-blueviolet';
 } else if (license === 'Unlicense'){
   return licenseBadge + TheUnlicense-yellowgreen;
-}
+};
 
 // TODO: Create a function that returns the license link
 const renderLicenseLink = license => {
   let licenseLink = 'https://choosealicense.com/licenses/';
 //return an empty string
 if (license === 'None'){
-  return licenseKink = '';
-} else if (license === 'MIT'){
-  return licenseLink = licenseLink + 'mit/';
-} else if (license === 'GNU AGPLv3'){
-  return licenseLink = licenseLink + 'agpl-3.0/';
-} else if (license === 'GNU LGPLv3'){
-  return licenseLink = licenseLink + 'lgpl-3.0/';
-} else if (license === 'Apache 2.0'){
-  return licenseLink = licenseLink + 'apache-2.0/';
-} else if (license === 'Mozilla 2.0'){
-  return licenseLink = licenseLink + 'mpl-2.0/';
-} else if (license === 'Unlicense')
-}
+    return licenseKink = '';
+  } else if (license === 'MIT'){
+    return licenseLink = licenseLink + 'mit/';
+  } else if (license === 'GNU AGPLv3'){
+    return licenseLink = licenseLink + 'agpl-3.0/';
+  } else if (license === 'GNU LGPLv3'){
+    return licenseLink = licenseLink + 'lgpl-3.0/';
+  } else if (license === 'Apache 2.0'){
+    return licenseLink = licenseLink + 'apache-2.0/';
+  } else if (license === 'Mozilla 2.0'){
+    return licenseLink = licenseLink + 'mpl-2.0/';
+  } else if (license === 'Unlicense') {
+    return licenseLink = licenseLink + 'unlicense/';
+  }
+};
 
 // TODO: Create a function that returns the license section of README
 
