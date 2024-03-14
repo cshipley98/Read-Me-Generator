@@ -62,6 +62,7 @@ const generateMarkdown = data => {
   //get license to pass through as parameters for other functions
   const license = '${data.license}';
   return '#{data.title}'
-}
+  renderLicenseSection(license)
+};
 
 module.exports = generateMarkdown;
