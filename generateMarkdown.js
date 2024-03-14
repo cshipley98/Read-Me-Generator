@@ -58,10 +58,10 @@ const renderLicenseSection = license => {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+const generateMarkdown = data => {
+  //get license to pass through as parameters for other functions
+  const license = '${data.license}';
+  return '#{data.title}'
 }
 
 module.exports = generateMarkdown;
